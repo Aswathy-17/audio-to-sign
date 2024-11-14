@@ -1,0 +1,9 @@
+Flask
+flask-cors
+whisper
+pydub
+ffmpeg-python
+noisereduce
+librosa
+soundfile
+torch
