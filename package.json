@@ -1,0 +1,15 @@
+{
+  "name": "audio-to-sign",
+  "version": "1.0.0",
+  "description": "A website for converting audio to sign language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
