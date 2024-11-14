@@ -11,17 +11,17 @@ def preprocess_audio(file_path, output_path="audio/processed_audio.wav"):
     audio.export(output_path, format="wav")
     return output_path
 
-def reduce_noise(file_path, output_path="audio/denoised_audio.wav"):
-    """Reduce background noise in the audio file."""
-    y, sr = librosa.load(file_path, sr=None)
-    reduced_noise = nr.reduce_noise(y=y, sr=sr)
-    sf.write(output_path, reduced_noise, sr)
-    return output_path
+# def reduce_noise(file_path, output_path="audio/denoised_audio.wav"):
+#     """Reduce background noise in the audio file."""
+#     y, sr = librosa.load(file_path, sr=None)
+#     reduced_noise = nr.reduce_noise(y=y, sr=sr)
+#     sf.write(output_path, reduced_noise, sr)
+#     return output_path
 
-def remove_silence(file_path, output_path="audio/no_silence.wav"):
-    """Remove silence from the audio file."""
-    audio = AudioSegment.from_file(file_path)
-    chunks = [chunk for chunk in audio if chunk.dBFS > -40]
-    processed_audio = sum(chunks)
-    processed_audio.export(output_path, format="wav")
-    return output_path
+# def remove_silence(file_path, output_path="audio/no_silence.wav"):
+#     """Remove silence from the audio file."""
+#     audio = AudioSegment.from_file(file_path)
+#     chunks = [chunk for chunk in audio if chunk.dBFS > -40]
+#     processed_audio = sum(chunks)
+#     processed_audio.export(output_path, format="wav")
+#     return output_path

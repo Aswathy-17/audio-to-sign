@@ -1,7 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from scripts.transcribe import transcribe_audio
-from scripts.preprocess import preprocess_audio, reduce_noise, remove_silence
+from scripts.preprocess import preprocess_audio
+# from scripts.preprocess import reduce_noise, remove_silence
 from scripts.text_to_sign import convert_text_to_sign
 import os
 
@@ -26,8 +27,8 @@ def transcribe():
     print(f"Preprocessing audio file: {raw_file_path}")
     
     processed_file = preprocess_audio(raw_file_path)
-    processed_file = reduce_noise(processed_file)
-    processed_file = remove_silence(processed_file)
+    # processed_file = reduce_noise(processed_file)
+    # processed_file = remove_silence(processed_file)
     print("Processed file path:", processed_file)
 
     # Transcription
