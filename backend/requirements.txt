@@ -1,0 +1,7 @@
+Flask
+flask-cors
+openai-whisper
+pydub
+noisereduce
+librosa
+soundfile
