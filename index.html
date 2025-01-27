@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Language Avatar</title>
-  <style>
-    body { margin: 0; overflow: hidden; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="src/main.js" defer></script>
 </head>
 <body>
-  <input id="textInput" type="text" placeholder="Enter text" style="position: absolute; top: 10px; left: 10px; z-index: 10;">
-  <button onclick="convertToSign()" style="position: absolute; top: 10px; left: 200px; z-index: 10;">Convert</button>
-  <script type="module" src="main.js"></script>
+    <h1>Sign Language Translator</h1>
+    <div class="translator-container">
+        <input 
+            type="text" 
+            id="textInput" 
+            placeholder="Enter text (e.g., 'hello' or a single letter)" 
+            aria-label="Enter text for translation" 
+        />
+        <button id="translateButton" aria-label="Translate text to sign video">Translate</button>
+    </div>
+    <div id="videoContainer">
+        <video id="signVideo" controls autoplay></video>
+    </div>
 </body>
-</html>
+</html> 
+
+
