@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,4 +24,33 @@
 </body>
 </html> 
 
+ -->
 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sign Language Translator</title>
+     <link rel="stylesheet" href="style.css">
+     <script type="module" src="src/main.js"></script>
+ </head>
+ <body>
+     <h1>Sign Language Translator</h1>
+     <div class="translator-container">
+         <input
+             type="text"
+             id="textInput"
+             placeholder="Enter text (e.g., 'hello')"
+         />
+         <button id="translateButton">Translate</button>
+     </div>
+     <div id="displayText" class="display-text"></div> 
+     <div id="loadingIndicator" style="display: none;">Loading...</div> 
+     <div id="videoContainer">
+         <video id="signVideo" controls autoplay muted>
+             Your browser does not support the video tag.
+         </video>
+     </div>
+ </body>
+ </html>

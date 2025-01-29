@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f9;
@@ -51,4 +51,61 @@ h1 {
     max-width: 600px;
     border: 1px solid #ccc;
     border-radius: 5px;
+} */
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.translator-container {
+    margin: 20px 0;
+}
+
+#textInput {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#translateButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#translateButton:hover {
+    background-color: #0056b3;
+}
+
+#videoContainer {
+    margin-top: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.display-text {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#loadingIndicator {
+    font-size: 20px;
+    color: #007bff;
+    margin: 20px 0;
 }
